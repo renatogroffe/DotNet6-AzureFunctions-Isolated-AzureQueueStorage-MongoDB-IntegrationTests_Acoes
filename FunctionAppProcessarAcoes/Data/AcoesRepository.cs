@@ -30,8 +30,8 @@ public class AcoesRepository
         document.CorretoraResponsavel = new()
         {
             Codigo = dadosAcao.CodCorretora,
-            //Nome = dadosAcao.CodCorretora // FIXME: Simulação de Falha
-            Nome = dadosAcao.NomeCorretora
+            Nome = dadosAcao.CodCorretora // FIXME: Simulação de Falha
+            //Nome = dadosAcao.NomeCorretora
         };
 
         _historico.InsertOne(document);
